@@ -12,10 +12,22 @@ public class VideoInfo {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ACTM_ORDR_STG_SK")
 Integer id;
-String videoName;
-int points;
+private String videoName;
+private int points;
 public VideoInfo(String v, Integer p) {
 	videoName = v;
 	points=p;
+}
+
+public VideoInfo() {
+	
+}
+
+public String getVideoName() {
+	return videoName;
+}
+
+public Integer getPoints() {
+	return points;
 }
 }

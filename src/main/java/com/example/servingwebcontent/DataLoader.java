@@ -21,12 +21,11 @@ private VideoInfoRepository repository;
 		viList.add(new VideoInfo("learn_about_thrivent",20));
 		viList.add(new VideoInfo("welcome",20));
 		viList.add(new VideoInfo("interest_rates",2));
-		
+		viList.add(new VideoInfo("why_save",5));
 
 		List<VideoInfo> savedItems = repository.saveAll(viList);
 		System.out.println(savedItems.size() + " items saved");
 		
-		// TODO Auto-generated method stub
 		
 	}
 
