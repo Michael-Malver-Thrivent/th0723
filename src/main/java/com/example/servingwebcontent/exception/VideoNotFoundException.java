@@ -7,4 +7,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 public class VideoNotFoundException  extends RuntimeException {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1280188263886128001L;
+
 }

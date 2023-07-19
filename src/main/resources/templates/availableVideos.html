@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Videos and their point values</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table>
+<th> title</th>
+<th>points</th>
+
+<tr th:each = "video : ${videos}">
+<td th:text = "${video.videoName}">
+</td> 
+<td th:text="${video.points}"> </td>
+</tr>
+    </table>
+</body>
+</html>

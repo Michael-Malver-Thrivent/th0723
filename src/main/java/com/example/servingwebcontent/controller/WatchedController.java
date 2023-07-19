@@ -1,5 +1,7 @@
 package com.example.servingwebcontent.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,4 +29,11 @@ public class WatchedController {
 		model.addAttribute("points", item.getPoints());
 		return "summary";
 	}
+	
+	@GetMapping("/pointedVideos")
+	public String prepVideoList(Model model) {
+List<VideoInfo> videoList = repository.findAll();
+model.addAttribute("videos",videoList);
+return "availableVideos";
+}
 }
